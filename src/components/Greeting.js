@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getDataFromAPI } from '../redux/reducers/greetings';
 
 const Greetings = () => {
-  const selected = useSelector((state) => state.greetings);
+  const selected = useSelector((state) => state.greetings.message);
   const dispatch = useDispatch();
 
   const handleClick = () => {
